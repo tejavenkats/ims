@@ -15,7 +15,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start cd flaskApi && .env/bin/flask run",
     "start-flask-app":"cd flaskApi && .env/bin/flask run",
     "build": "react-scripts build",
     "test": "react-scripts test",
