@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Component CSS */
+.navbar {
+  font-family: sans-serif;
+  background-color: rgb(11, 131, 236);
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 2rem;
+  box-shadow: 1px 1px 3px black;
+}
+
+.brand {
+  color: antiquewhite;
+  font-size: 3rem;
+  font-weight: bolder;
+  display: inline-block;
+  width: 12rem;
+  padding: 0.8rem 0 0 1rem;
+  transition: 0.3s;
+}
+.brand:hover {
+  color: rgb(0, 0, 0);
+}
+
+.search-bar {
+  text-align: center;
+  font-size: 1.2rem;
+  float: right;
+  margin: 1.5rem 3rem 0 0;
+  height: 2rem;
+  width: 17rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 2px 2px 3px rgb(59, 68, 85);
+}
+
+.search-btn {
+  background-color: rgb(135, 241, 36);
+  float: right;
+  height: 2rem;
+  margin: 1.5rem -19.5rem;
+  width: 2rem;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  transition: 0.2s;
+}
+
+.search-btn:hover {
+  background-color: rgb(175, 250, 110);
+
+  box-shadow: 2px 2px 4px rgb(62, 68, 61);
+}
+
+/* BookTile Component CSS */
+.tile-container {
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: rgb(107, 175, 240);
+  display: inline-block;
+  text-align: center;
+  width: 18rem;
+  height: 22rem;
+  margin: 1.5rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 4px black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: 0.4s;
+}
+
+.tile-container:hover {
+  background-color: rgb(73, 153, 233);
+}
+
+.title {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.authors {
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+.stock {
+  padding: 0.25rem 0;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.stock span {
+  font-size: medium;
+  font-weight: lighter;
+}
+
+.description {
+  padding: 0.15rem 0;
+  font-size: medium;
+}
+
+.description span {
+  font-weight: bold;
+  font-size: large;
+}

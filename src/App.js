@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {Route,Switch} from "react-router-dom";
+import BookShelfForInventory from "./components/BookShelfForInventory";
+import BookShelfForSearchResults from "./components/BookShelfForSearchResults";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Switch>
+        <Route path="/" exact
+        render={()=>
+          <BookShelfForInventory getRoute="http://localhost:5000/getAllBooks"/>
+        }/>
+        <Route path="/search" exact 
+        render={(props)=><BookShelfForSearchResults {...props.location.state} /> }/>
+      </Switch>
+      
     </div>
   );
 }
